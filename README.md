@@ -44,10 +44,10 @@ Cuando es cercano a cero, los grupos se solapan, y cuando es cercano a -1 alguno
    -   Casos de usos comunes: Segmentación de clientes bancarios (p.e. saldo bancario vs uso tarjeta de crédito),                  campañas de marketing segmentadas, agrupación de documentación.   
      
  - Clustering Jeráquico
-   - Descripción:
-   - Ventajas:
-   - Desventajas:
-   - Casos de usos comunes:
+   -   Descripción: Inicialmente todos los puntos son clusters, después se van combinando con una función incremental para         crear clusters más grandes. Podemos, como primera base de estudio convertir los puntos en vectores, con análisis de         la función coseno, para ver similitudes entre ellos y hacer una matriz para visualizarlos. Medimos también la               distancia entre vectores mirando distancia  euclidiana (hipotenusa). Inicialmente cada punto era un cluster, a              partir de la medición de la distancia euclidiana, voy uniendo puntos en clusters por proximidad y lo voy                    representando en un dendograma o árbol de decisiones. En el dendograma se verá una jerarquía de clusters.                   Seguidamente cortamos el dendógrama a partir de una distancia que elijamos, y nos quedamos con los clusters creados         por debajo de esa distancia.
+   -   Ventajas: No hay un número de clusters fijo al principio. La representación visual es intuitiva y permite la toma de        decisiones de manera más consciente.
+   -   Desventajas: Consumo de memoria elevado. Proceso más lento. Las fusiones de clusters realizadas conforme se avanza,         no se pueden deshacer.
+   -   Casos de usos comunes: Análisis biológicos, catálogos de despiece de productos.
      
  - DBSCAN
    - Descripción:
