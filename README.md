@@ -3,14 +3,15 @@ Investigación y Desarrollo sobre Algoritmos de Clustering
 Parte 1: Algoritmos No Supervisados de Clustering
 
 1. ¿Qué es el aprendizaje no supervisado y qué es un algoritmo de clustering? ¿En qué se diferencia del aprendizaje supervisado y cuál es su propósito?
+   
    El aprendizaje no supervisado es una variante del Machine Learning donde el modelo no aprende recibiendo respuestas correctas de ejemplos. Trabaja sin etiquetas previas, recibe características de elementos y su objetivo es encontrar grupos o estructuras natruales ocultas.
    Propósito: Un algoritmo de clustering divide un conjunto de datos en grupos (o clusters), siendo los integrantes del grupo muy similares y diferentes a los de otros grupos (o clusters)
 
  
 2. Explique la diferencia conceptual entre el clustering basado en centroides (particional) y el clustering jerárquico, mencionando un algoritmo representativo de cada enfoque
    
-  El clustering basado en cnetroides divide los datos en un número de grupos (K) alrededor de puntos centrales (denominados centroides). Algoritmo representativo: K-means
-  El clustering jerarquico construye una estructura llamada dendrograma, uniendo los puntos más cercanos de manera repetitiva, hasta formar un grupo global. Después se decide en que nivel de ramas se hace el análisis para que sea más adecuado. Algoritmo representativo: Agglomerative Clustering
+   El clustering basado en cnetroides divide los datos en un número de grupos (K) alrededor de puntos centrales (denominados centroides). Algoritmo representativo: K-means
+   El clustering jerarquico construye una estructura llamada dendrograma, uniendo los puntos más cercanos de manera repetitiva, hasta formar un grupo global. Después se decide en que nivel de ramas se hace el análisis para que sea más adecuado. Algoritmo representativo: Agglomerative Clustering
 
 
    
@@ -34,11 +35,33 @@ Cuando es cercano a cero, los grupos se solapan, y cuando es cercano a -1 alguno
 
    
 5. Explica brevemente los siguientes algoritmos:
+   (Para cada uno, incluye una breve descripción del mecanismo, ventajas, desventajas y casos de uso comunes.)
+   
  - K-means
+   -   Descripción: Partimos de un número de clusters (K) que puede venir condicionado por el cliente o negocio. Ubicamos          unos centroides de manera arbitraria inicialmente. Seleccionamos un punto del estudio y medimos la distancia a cada         uno de los centroides. Se asignaré pertenencia al cluster donde tenga el centroide más cercano según distancia              euclídea. Una vez asignados todos los puntos, el siguiente paso es acercar el centroide al centro del cluster               generado, usando el promedio de todos los puntos del cluster. Volvemos a mirar la distancia de todos los puntos a           la nueva posición del centroide y determinamos pertenencia de los puntos a cluster nuevamente. Importante, aparece          un parámetro llamado inercia calculada con la distancia al cuadrado de cada uno de los puntos al centroide, para dar        más peso al punto lejano.
+   -   Ventajas: Rápido y escalable a grandes volúmenes de datos
+   -   Desventajas: Partir de un K inicial, quizás preestableciod como requerimiento. Funciona bien con grupos de forma            esférica y es sensible a outliers (valores atípicos)
+   -   Casos de usos comunes: Segmentación de clientes bancarios (p.e. saldo bancario vs uso tarjeta de crédito),                  campañas de marketing segmentadas, agrupación de documentación.   
+     
  - Clustering Jeráquico
+   - Descripción:
+   - Ventajas:
+   - Desventajas:
+   - Casos de usos comunes:
+     
  - DBSCAN
+   - Descripción:
+   - Ventajas:
+   - Desventajas:
+   - Casos de usos comunes:
+     
  - Gaussian Misture Models (GMM)
-   Para cada uno, incluye una breve descripción del mecanismo, ventajas, desventajas y casos de uso comunes.
+   - Descripción:
+   - Ventajas:
+   - Desventajas:
+   - Casos de usos comunes:
+     
+   
    
 
 
