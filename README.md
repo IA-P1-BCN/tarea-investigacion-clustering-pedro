@@ -50,10 +50,10 @@ Cuando es cercano a cero, los grupos se solapan, y cuando es cercano a -1 alguno
    -   Casos de usos comunes: Análisis biológicos, catálogos de despiece de productos.
      
  - DBSCAN
-   - Descripción:
-   - Ventajas:
-   - Desventajas:
-   - Casos de usos comunes:
+   -   Descripción: DBSCAN (Acrónimo de Density-Based Spatial Clustering of Applications with Noise → Técnica de                   clusterizado espacial basada en densidad para aplicaciones con ruido). Primeramente se selecciona un punto y he de          determinar si se encuentra dentro de una región densa. Para definir lo que es una seccion lo hacemos a trvés de un          parámetro llamado épsilon que se usará como radio de un circulo. Contaremos la cantidad de puntos incluidos dentro          de ese radio. Definimos un umbral, que es una variable numérica a partir de la cual decidimos que es una zona               densamente poblada. Si es asi, podemos decir que ese punto es un punto core y  formará parte de un cluster. Este            procedimiento lo repetimos para todos los puntos. Si el punto no forma parte de una zona densamente poblada, se             considerará ruido y no formará parte de un cluster. Una vez considerada toda la estructura, habrá puntos de contacto        que no se han considerado dentro del cluster por no cumplir con el umbral, pero que son contiguos a áreas densas.           Estos puntos añadidos, no servirán para añadir puntos adicionales, porque ya estaban en una situación delicada.
+   - Ventajas: Los grupos pueden ser de formas dispares, no siempre circulares. No es necesario definir el número de               clusters inicial. Fiabilidad considerando outliers.
+   - Desventajas: Sensible a las elecciones de épsilon y corte mínimo o umbral. Si los grupos son muy dispares, se piede           eficacia.
+   - Casos de usos comunes: Análisis termográfico, Detección de ataques fraudulentos, anomalias de detección en sensores.
      
  - Gaussian Misture Models (GMM)
    - Descripción:
