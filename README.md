@@ -56,10 +56,10 @@ Cuando es cercano a cero, los grupos se solapan, y cuando es cercano a -1 alguno
    - Casos de usos comunes: Análisis termográfico, Detección de ataques fraudulentos, anomalias de detección en sensores.
      
  - Gaussian Misture Models (GMM)
-   - Descripción:
-   - Ventajas:
-   - Desventajas:
-   - Casos de usos comunes:
+   - Descripción: En el modelo GMM se interpreta que cada dato es como una mezcla de nubes de datos con forma gausiana. GMM        calcula la probabilidad de que cada dato pertenezca a cada grupo. Inicialmente se decide cuantos grupos se van a            buscar. Se generan unas campanas o grupos iniciales con un centro, un tamaño y dispersión. El algoritmo comprueba           que probabilidad hay de que cada punto haya salido de una campana determinada. Según muestren las probabilidades, se        mueve el centro, el tamaño y la forma de cada campana para que se adapten a los puntos que forman parte de la               campana. Se vuelve a iterar el procedimiento de revisión de probabilidad de cada punto de pertenecer a una campana y        ajuste de la campana, hasta que prácticamente no hay variación en ellas.
+   - Ventajas: Los grupos estudiados pueden ser elípticos e inclinados lo que genera más posibilidades de estudio. Se              trabaja más con probabilidades que con una clasificación estricta.
+   - Desventajas: Requiere indicación de número de componentes y es leto. La complejidad de los datos puede generar                problemas de tratamiento. 
+   - Casos de usos comunes: Análisis de imágenes, reconocimientos de voz.
      
    
    
